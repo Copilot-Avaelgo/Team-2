@@ -1,0 +1,35 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\AI2\Team-2\backend
+configfile: pytest.ini
+plugins: anyio-3.7.1, asyncio-1.4.0, cov-7.1.0, mock-3.15.1
+asyncio: mode=strict, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 139 items
+
+tests\test_config.py ..............                                      [ 10%]
+tests\test_document_processor.py .......................                 [ 26%]
+tests\test_integration.py .................                              [ 38%]
+tests\test_llm_service.py .............                                  [ 48%]
+tests\test_models.py ..................................                  [ 72%]
+tests\test_rag_pipeline.py ...............                               [ 83%]
+tests\test_rag_pipeline_advanced.py .........                            [ 89%]
+tests\test_search_service.py ..............                              [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                                 Stmts   Miss  Cover
+--------------------------------------------------------
+src\__init__.py                          0      0   100%
+src\config.py                           18      0   100%
+src\main.py                             33     33     0%
+src\models.py                           17      0   100%
+src\routes\__init__.py                   0      0   100%
+src\routes\chat.py                      26     26     0%
+src\services\__init__.py                44      0   100%
+src\services\document_processor.py      42      3    93%
+src\services\llm_service.py             35      0   100%
+src\services\search_service.py          34      0   100%
+--------------------------------------------------------
+TOTAL                                  249     62    75%
+======================= 139 passed, 3 warnings in 1.42s =======================
